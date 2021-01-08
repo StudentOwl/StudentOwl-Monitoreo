@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest-cov = "*"
+pytest-qt = "*"
+pytest-xvfb = "*"
+codecov = "*"
+autopep8 = "*"
+
+[packages]
+pytest = "*"
+pyqt5 = "*"
+pyside2 = "*"
+
+[requires]
+python_version = "3.9"
