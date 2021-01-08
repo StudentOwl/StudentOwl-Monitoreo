@@ -20,8 +20,7 @@ class Model(QObject):
             self.users_changed.emit(self._users)
 
     def delete_user(self, value):
-        if value in self._users:
-            del self._users[value]
+        del self._users[value]
 
         self.users_changed.emit(self._users)
 

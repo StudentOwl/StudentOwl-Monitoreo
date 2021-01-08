@@ -34,5 +34,5 @@ class MainController(QObject):
     def delete_user(self, value):
         self._model.delete_user(value)
         # calculate button enabled state
-        # if(self._model.users.count > 0):
-        #    self._model.enable_del_user = True if value else False
+        if(self._model.users.count > 0):
+            self._model.enable_del_user = True if value else False
