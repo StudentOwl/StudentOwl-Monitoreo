@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>img/StudentOwlLogoRight.png</file>
+  </qresource>
+</RCC>
