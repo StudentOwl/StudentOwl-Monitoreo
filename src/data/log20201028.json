@@ -1,0 +1,181 @@
+[
+  {
+    "class": "system",
+    "time": "23:04:53",
+    "action": "23:04:53 New session for Scoowy. [DESKTOP-KD6GQPP IP: 192.168.1.4]"
+  },
+  {
+    "class": "system",
+    "time": "23:04:53",
+    "action": "23:04:53 Basic account. Screenshots, Skype and keystorkes in demo mode."
+  },
+  {
+    "class": "clipboard",
+    "time": "23:04:53",
+    "action": "23:04:53 Clipboard :https://www.softzone.es/2015/11/28/monitoriza-uso-haces-tus-aplicaciones-windows-apps-trac"
+  },
+  {
+    "class": "system",
+    "time": "23:05:16",
+    "action": "New session for Scoowy. [DESKTOP-KD6GQPP IP: 192.168.1.4]"
+  },
+  {
+    "class": "system",
+    "time": "23:05:16",
+    "action": "Basic account. Screenshots, Skype and keystorkes in demo mode."
+  },
+  {
+    "class": "app",
+    "time": "23:04:54",
+    "duration": "22",
+    "applicationName": "explorer",
+    "action": "Desktop"
+  },
+  {
+    "class": "app",
+    "time": "23:04:56",
+    "duration": "2",
+    "applicationName": "Kidlogger",
+    "action": "Kidlogger []"
+  },
+  {
+    "class": "app",
+    "time": "23:04:57",
+    "duration": "19",
+    "applicationName": "PacketTracer7",
+    "action": "Cisco Packet Tracer"
+  },
+  {
+    "class": "app",
+    "time": "23:05:37",
+    "duration": "0",
+    "applicationName": "msedge",
+    "action": "kidlogger.net/knowledgebase1.html y 3 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "23:05:37",
+    "duration": "19",
+    "href": "kidlogger.net",
+    "action": "kidlogger.net/knowledgebase1.html y 3 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "app",
+    "time": "23:05:57",
+    "duration": "0",
+    "applicationName": "msedge",
+    "action": "kidlogger.net/analitycs/log/b5x-rq-cda y 3 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "23:05:57",
+    "duration": "95",
+    "href": "kidlogger.net",
+    "action": "kidlogger.net/analitycs/log/b5x-rq-cda y 3 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "app",
+    "time": "23:06:47",
+    "duration": "16",
+    "applicationName": "explorer",
+    "action": "Conmutación de tareas"
+  },
+  {
+    "class": "app",
+    "time": "23:06:49",
+    "duration": "4",
+    "applicationName": "Kidlogger",
+    "action": "Kidlogger []"
+  },
+  {
+    "class": "app",
+    "time": "23:07:27",
+    "duration": "4",
+    "applicationName": "PacketTracer7",
+    "action": "Cisco Packet Tracer"
+  },
+  {
+    "class": "keystrokes",
+    "time": "23:08:27",
+    "applicationName": "SearchUI",
+    "action": "kidl"
+  },
+  {
+    "class": "system",
+    "time": "23:08:40",
+    "action": "Desktop has been switched or locked"
+  },
+  {
+    "class": "app",
+    "time": "23:07:56",
+    "duration": "18",
+    "applicationName": "explorer",
+    "action": "Conmutación de tareas"
+  },
+  {
+    "class": "app",
+    "time": "23:08:02",
+    "duration": "2",
+    "applicationName": "WhatsApp",
+    "action": "WhatsApp"
+  },
+  {
+    "class": "app",
+    "time": "23:08:03",
+    "duration": "0",
+    "applicationName": "msedge",
+    "action": "kidlogger.net/analitycs/log/b5x-rq-cda y 3 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "23:08:04",
+    "duration": "16",
+    "href": "kidlogger.net",
+    "action": "kidlogger.net/analitycs/log/b5x-rq-cda y 3 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "app",
+    "time": "23:08:20",
+    "duration": "7",
+    "applicationName": "SearchUI",
+    "action": "Cortana"
+  },
+  {
+    "class": "system",
+    "time": "23:08:58",
+    "action": "Closing by the User or Installer..."
+  },
+  {
+    "class": "app",
+    "time": "23:08:42",
+    "duration": "2",
+    "applicationName": "explorer",
+    "action": "KidLogger"
+  },
+  {
+    "class": "app",
+    "time": "23:08:43",
+    "duration": "4",
+    "applicationName": "Kidlogger",
+    "action": "Kidlogger []"
+  },
+  {
+    "class": "app",
+    "time": "23:08:45",
+    "duration": "0",
+    "applicationName": "msedge",
+    "action": "kidlogger.net/analitycs/log/b5x-rq-cda y 3 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "23:08:45",
+    "duration": "11",
+    "href": "kidlogger.net",
+    "action": "kidlogger.net/analitycs/log/b5x-rq-cda y 3 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "system",
+    "time": "23:09:24",
+    "action": "23:09:24 User opened statistics"
+  }
+]

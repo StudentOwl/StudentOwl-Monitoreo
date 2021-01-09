@@ -1,0 +1,535 @@
+[
+  {
+    "class": "system",
+    "time": "08:42:03",
+    "action": "08:42:03 New session for Scoowy. [DESKTOP-KD6GQPP IP: 192.168.1.2]"
+  },
+
+  {
+    "class": "system",
+    "time": "08:42:03",
+    "action": "08:42:03 Basic account. Screenshots, Skype and keystorkes in demo mode."
+  },
+
+  {
+    "class": "system",
+    "time": "08:42:26",
+    "action": "New session for Scoowy. [DESKTOP-KD6GQPP IP: 192.168.1.2]"
+  },
+
+  {
+    "class": "system",
+    "time": "08:42:26",
+    "action": "Basic account. Screenshots, Skype and keystorkes in demo mode."
+  },
+
+  {
+    "class": "clipboard",
+    "time": "08:42:26",
+    "action": "Clipboard :log.options"
+  },
+
+  {
+    "class": "app",
+    "time": "08:42:04",
+    "duration": "33",
+    "applicationName": "explorer",
+    "action": "Desktop"
+  },
+  {
+    "class": "app",
+    "time": "08:42:06",
+    "duration": "5",
+    "applicationName": "Kidlogger",
+    "action": "Kidlogger []"
+  },
+  {
+    "class": "app",
+    "time": "08:42:13",
+    "duration": "12",
+    "applicationName": "Code",
+    "action": "config.ini - src - Visual Studio Code [Administrador]"
+  },
+  {
+    "class": "app",
+    "time": "08:42:54",
+    "duration": "1",
+    "applicationName": "Menu",
+    "action": "Menu"
+  },
+  {
+    "class": "url",
+    "time": "08:42:55",
+    "duration": "5",
+    "href": "rogram%20Files%20(x86)",
+    "action": "Sin título y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "app",
+    "time": "08:42:56",
+    "duration": "3",
+    "applicationName": "msedge",
+    "action": "8 January,Friday.htm y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:43:02",
+    "duration": "2",
+    "href": "stackoverrun.com",
+    "action": "python - Lectura de un archivo que se actualiza con frecuencia y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:43:07",
+    "duration": "1",
+    "href": "10112607788",
+    "action": "leer un archivo que se actualiza regularmente python - Buscar con Google y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "app",
+    "time": "08:43:07",
+    "duration": "0",
+    "applicationName": "msedge",
+    "action": "leer un archivo que se actualiza regularmente python - Buscar con Google y 5 páginas más "
+  },
+  {
+    "class": "url",
+    "time": "08:43:07",
+    "duration": "10",
+    "href": "rogram%20Files%20(x86)",
+    "action": "8 January,Friday.htm y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:43:08",
+    "duration": "2",
+    "href": "stackoverrun.com",
+    "action": "python - Lectura de un archivo que se actualiza con frecuencia y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "app",
+    "time": "08:43:20",
+    "duration": "76",
+    "applicationName": "explorer",
+    "action": "Scoowy"
+  },
+  {
+    "class": "app",
+    "time": "08:44:36",
+    "duration": "30",
+    "applicationName": "Code",
+    "action": "readerLog.py - src - Visual Studio Code [Administrador]"
+  },
+  {
+    "class": "clipboard",
+    "time": "08:45:22",
+    "action": "Clipboard :8 January,Friday.htm"
+  },
+
+  {
+    "class": "clipboard",
+    "time": "08:46:16",
+    "action": "Clipboard :config['log.options']['path']"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:46:37",
+    "applicationName": "Code",
+    "action": "pathfiel = path.join(, "
+  },
+
+  {
+    "class": "clipboard",
+    "time": "08:46:40",
+    "action": "Clipboard :8 January,Friday.htm"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:46:43",
+    "applicationName": "explorer",
+    "action": ""
+  },
+
+  {
+    "class": "jpg",
+    "time": "08:47:27",
+    "title": "â— readerLog.py - src - Visual Studio Code [Administrador]",
+    "imgRoute": "<img src='file:///C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\8 January,Friday[8 47] Code.jpg'>"
+  },
+
+  {
+    "class": "clipboard",
+    "time": "08:47:31",
+    "action": "Clipboard :config['log.options']['path']"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:47:48",
+    "applicationName": "Code",
+    "action": "from os import pa, user"
+  },
+
+  {
+    "class": "clipboard",
+    "time": "08:49:50",
+    "action": "Clipboard :'property' object is not subscriptable"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:49:51",
+    "applicationName": "Code",
+    "action": "patpath.9"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:49:58",
+    "applicationName": "msedge",
+    "action": " python3"
+  },
+
+  {
+    "class": "jpg",
+    "time": "08:52:27",
+    "title": "â— configurator.py - src - Visual Studio Code [Administrador]",
+    "imgRoute": "<img src='file:///C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\8 January,Friday[8 52] Code.jpg'>"
+  },
+
+  { "class": "clipboard", "time": "08:53:10", "action": "Clipboard :pathfile" },
+
+  {
+    "class": "jpg",
+    "time": "08:57:27",
+    "title": "readerLog.py - src - Visual Studio Code [Administrador]",
+    "imgRoute": "<img src='file:///C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\8 January,Friday[8 57] Code.jpg'>"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:58:03",
+    "applicationName": "Code",
+    "action": "from import osfrom os import paF2pathfilepath.(.(getCge(self('config.ini, .90.1cl'"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:58:19",
+    "applicationName": "Code",
+    "action": "s"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:58:53",
+    "applicationName": "Code",
+    "action": "cl"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "08:59:20",
+    "applicationName": "msedge",
+    "action": "instr"
+  },
+
+  {
+    "class": "jpg",
+    "time": "09:02:27",
+    "title": "dabeaz generators  Generator Tricks for Systems Programmers (Tutorial) y 7 pÃ¡ginas mÃ¡s - Personal  Microsoftâ€‹ Edge",
+    "imgRoute": "<img src='file:///C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\8 January,Friday[9 2] msedge.jpg'>"
+  },
+
+  {
+    "class": "keystrokes",
+    "time": "09:03:12",
+    "applicationName": "generators/follow.py at master · dabeaz/generator",
+    "action": "eha"
+  },
+
+  {
+    "class": "jpg",
+    "time": "09:07:27",
+    "title": "â— readerLog.py - src - Visual Studio Code [Administrador]",
+    "imgRoute": "<img src='file:///C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\8 January,Friday[9 7] Code.jpg'>"
+  },
+
+  {
+    "class": "jpg",
+    "time": "09:12:27",
+    "title": "readerLog.py - src - Visual Studio Code [Administrador]",
+    "imgRoute": "<img src='file:///C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\8 January,Friday[9 12] Code.jpg'>"
+  },
+
+  {
+    "class": "app",
+    "time": "08:45:07",
+    "duration": "857",
+    "applicationName": "Code",
+    "action": "readerLog.py - src - Visual Studio Code [Administrador]"
+  },
+  {
+    "class": "app",
+    "time": "08:45:14",
+    "duration": "24",
+    "applicationName": "explorer",
+    "action": "Scoowy"
+  },
+  {
+    "class": "app",
+    "time": "08:47:50",
+    "duration": "16",
+    "applicationName": "msedge",
+    "action": "8 January,Friday.htm y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:49:58",
+    "duration": "16",
+    "href": "google.com",
+    "action": "Nueva pestaña y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:50:02",
+    "duration": "142",
+    "href": "github.com",
+    "action": "'property' object is not subscriptable python3 - Buscar con Google y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:50:24",
+    "duration": "9",
+    "href": "github.community",
+    "action": "Python strange Error 'TypeError: 'property' object is not subscriptable' - Programming Help - GitHub Support Community y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:50:36",
+    "duration": "19",
+    "href": "quora.com",
+    "action": "'property' object is not subscriptable python3 - Buscar con Google y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:51:00",
+    "duration": "87",
+    "href": "careerkarma.com",
+    "action": "'property' object is not subscriptable python3 - Buscar con Google y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:58:19",
+    "duration": "10",
+    "href": "rogram%20Files%20(x86)",
+    "action": "8 January,Friday.htm y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:58:53",
+    "duration": "48",
+    "href": "stackoverrun.com",
+    "action": "python - Lectura de un archivo que se actualiza con frecuencia y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:59:20",
+    "duration": "50",
+    "href": "utpl.instructure.com",
+    "action": "Nueva pestaña y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:59:24",
+    "duration": "5",
+    "href": "sts.utpl.edu.ec",
+    "action": "Iniciar sesión y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:59:25",
+    "duration": "0",
+    "href": "usuario@utpl.edu.ec",
+    "action": "Iniciar sesión y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:59:42",
+    "duration": "3",
+    "href": "applications.zoom.us",
+    "action": "ZOOM y 5 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "08:59:47",
+    "duration": "4",
+    "href": "utpl.zoom.us",
+    "action": "Sin título y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "app",
+    "time": "08:59:56",
+    "duration": "403",
+    "applicationName": "Zoom",
+    "action": "Zoom"
+  },
+  {
+    "class": "url",
+    "time": "09:01:27",
+    "duration": "20",
+    "href": "dabeaz.com",
+    "action": ":Generator Tricks for Systems Programmers y 6 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "app",
+    "time": "09:03:12",
+    "duration": "18",
+    "applicationName": "SearchUI",
+    "action": "Cortana"
+  },
+  {
+    "class": "app",
+    "time": "09:03:30",
+    "duration": "72",
+    "applicationName": "WhatsApp",
+    "action": "WhatsApp"
+  },
+  {
+    "class": "system",
+    "time": "09:15:12",
+    "action": "Basic/Demo account. Some features will be disabled"
+  },
+
+  {
+    "class": "system",
+    "time": "09:16:24",
+    "action": "Desktop has been switched or locked"
+  },
+
+  {
+    "class": "app",
+    "time": "09:15:14",
+    "duration": "61",
+    "applicationName": "Zoom",
+    "action": "Zoom Reunión"
+  },
+  {
+    "class": "app",
+    "time": "09:15:41",
+    "duration": "2",
+    "applicationName": "WhatsApp",
+    "action": "WhatsApp"
+  },
+  {
+    "class": "app",
+    "time": "09:16:17",
+    "duration": "5",
+    "applicationName": "Code",
+    "action": "readerLog.py - src - Visual Studio Code [Administrador]"
+  },
+  {
+    "class": "app",
+    "time": "09:16:22",
+    "duration": "2",
+    "applicationName": "ShellExperienceHost",
+    "action": "Lista de accesos directos para Windows Terminal (Preview)"
+  },
+  {
+    "class": "clipboard",
+    "time": "09:16:54",
+    "action": "Clipboard :C:\\Users\\Scoow\\Documents\\UTPL\\Reto\\StudentOwl\\StudentOwl-Monitoreo\\src"
+  },
+
+  {
+    "class": "jpg",
+    "time": "09:17:27",
+    "title": "C  ... StudentOwl-Monitoreo src",
+    "imgRoute": "<img src='file:///C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\8 January,Friday[9 17] WindowsTerminal.jpg'>"
+  },
+
+  {
+    "class": "jpg",
+    "time": "09:22:27",
+    "title": "Zoom ReuniÃ³n",
+    "imgRoute": "<img src='file:///C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\8 January,Friday[9 22] Zoom.jpg'>"
+  },
+
+  {
+    "class": "system",
+    "time": "09:33:25",
+    "action": "Desktop has been switched or locked"
+  },
+
+  {
+    "class": "app",
+    "time": "09:16:26",
+    "duration": "143",
+    "applicationName": "WindowsTerminal",
+    "action": "Administrador: Cyberlife - CodeLines"
+  },
+  {
+    "class": "app",
+    "time": "09:16:33",
+    "duration": "50",
+    "applicationName": "explorer",
+    "action": "Scoowy"
+  },
+  {
+    "class": "app",
+    "time": "09:18:17",
+    "duration": "222",
+    "applicationName": "Code",
+    "action": "readerLog.py - src - Visual Studio Code [Administrador]"
+  },
+  {
+    "class": "app",
+    "time": "09:19:42",
+    "duration": "107",
+    "applicationName": "WhatsApp",
+    "action": "WhatsApp"
+  },
+  {
+    "class": "app",
+    "time": "09:21:38",
+    "duration": "366",
+    "applicationName": "Zoom",
+    "action": "Zoom Reunión"
+  },
+  {
+    "class": "app",
+    "time": "09:24:06",
+    "duration": "16",
+    "applicationName": "python",
+    "action": "StudentOwl - Monitoreo"
+  },
+  {
+    "class": "app",
+    "time": "09:26:06",
+    "duration": "0",
+    "applicationName": "msedge",
+    "action": "StudentOwl - Reto y 8 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "url",
+    "time": "09:26:06",
+    "duration": "114",
+    "href": "github.com",
+    "action": "StudentOwl - Reto y 8 páginas más - Personal: Microsoft​ Edge"
+  },
+  {
+    "class": "system",
+    "time": "09:33:29",
+    "action": "Closing by the User or Installer..."
+  },
+
+  {
+    "class": "app",
+    "time": "09:33:27",
+    "duration": "3",
+    "applicationName": "Kidlogger",
+    "action": "Kidlogger []"
+  }
+]
