@@ -2,51 +2,70 @@
 # -*- coding: utf-8 -*-
 
 import io
-from os import path
-from utils.config import Configuration
+import json
 import time
+from os import path
 
-config = Configuration("config.ini").getConfig()
-
-
-# def followFile(thisfile: io.TextIOWrapper):
-#     """
-#     Generator to read file
-#     """
-#     thisfile.seek(0, 2)
-#     while True:
-#         line = thisfile.readline()
-#         if not line:
-#             time.sleep(3)
-#             continue
-#         yield line
+from utils.time_utils import convertTimeToTimestamp
 
 
-def followFile(thisfile: io.TextIOWrapper):
+class ReaderLogFile(object):
     """
-    Generator to read file
+    Reader LogFile class
+    Provides methods for obtaining log lines.
     """
-    thisfile.seek(0, 2)
-    while True:
-        line = thisfile.readline()
-        if not line:
-            time.sleep(3)
-            continue
-        yield line
 
+    def __init__(self, pathfile: str, lastLine=0):
+        """
+        Constructor de clase
+        """
+        self._pathfile = pathfile
+        self.lastLine = lastLine
 
-def main():
-    """
-    Main function
-    """
-    pathfile = path.join(config['log.options']['path'],
-                         config['log.options']['user'], "8 January,Friday.htm")
-    logfile = open(pathfile, "r")
-    loglines = followFile(logfile)
+    def getLines(self) -> list[str]:
+        """
+        Metodo que devuelve una lista de lineas
+        """
+        lines = []
+        pastLastLine = self.lastLine
+        with open(self._pathfile, 'r') as file:
+            # file.seek(self.lastLine,0)
+            lines = file.readlines()
+            self.lastLine = len(lines)
+        lines = lines[pastLastLine:]
 
-    for line in loglines:
-        print(line)
+        return lines
 
+    def getJson(self, lines: list[str]) -> str:
+        """
+        Metodo que procesa las lineas de texto a JSON
+        """
+        logs = []
+        for line in lines:
+            if line.strip() != "":
+                line = line.replace(',\n', '')
+                try:
+                    line: dict = json.loads(line)
+                    if type(line) == dict:
+                        line = self.proccessJson(line)
+                        if line:
+                            logs.append(line)
+                    else:
+                        print("[ERROR]: Not a dict")
+                except ValueError as err:
+                    print("[ERROR]: Not a valid JSON")
+                    print(f"\t{err}")
+                    print(f"\t{line}")
 
-if __name__ == "__main__":
-    main()
+        return json.dumps(logs)
+
+    def proccessJson(self, jsonData: dict) -> dict:
+        if jsonData["class"] != "system":
+            if jsonData.get("duration"):
+                jsonData["duration"] = int(jsonData["duration"])
+            if jsonData.get("time"):
+                jsonData["time"] = convertTimeToTimestamp(jsonData["time"])
+
+            return jsonData
+        else:
+            return None
