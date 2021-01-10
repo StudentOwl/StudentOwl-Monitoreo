@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from threading import Timer
+import time
 
 
 class RepeatedTimer(object):
@@ -9,14 +10,15 @@ class RepeatedTimer(object):
     An class to implement the running periodically function
     """
 
-    def __init__(self, interval: int, theFunction: function, *args, **kwargs) -> None:
+    def __init__(self, interval: int, theFunction, *args, **kwargs) -> None:
         self._timer = None
         self._interval = interval
         self._theFunction = theFunction
         self._args = args
         self._kwargs = kwargs
         self._is_running = False
-        self.start()
+        self.next_call = time.time()
+        # self.start()
 
     def _run(self):
         self._is_running = False
@@ -25,7 +27,8 @@ class RepeatedTimer(object):
 
     def start(self):
         if not self._is_running:
-            self._timer = Timer(self._interval, self._run)
+            self.next_call += self._interval
+            self._timer = Timer(self.next_call - time.time(), self._run)
             self._timer.start()
             self._is_running = True
 
