@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import io
 import json
-import time
-from os import path
 
 from utils.time_utils import convertTimeToTimestamp
 
