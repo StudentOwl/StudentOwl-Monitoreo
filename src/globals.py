@@ -10,6 +10,7 @@ __config = Configuration("config.ini").config
 # Log Constants
 PATH_LOGS_FOLDER = __config['log.options']['path']
 USER_NAME = __config['log.options']['user']
-LOG_FILE_FORMAT = __config['log.options']['format.file']
-LOG_NAME = LOG_FILE_FORMAT.format_map(
+__LOG_FILE_FORMAT = __config['log.options']['format.file']
+LOG_NAME = __LOG_FILE_FORMAT.format_map(
     {'day': getDayInInt(), 'month': getMonthInText(), 'daytext': getDayInText()})
+LOG_PATH = f"{PATH_LOGS_FOLDER}\\{USER_NAME}\\{LOG_NAME}"
