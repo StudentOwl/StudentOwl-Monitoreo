@@ -73,3 +73,8 @@ class WatcherView(QMainWindow):
     def on_combo_components_changed(self, value):
         self._ui.cbxComponent.clear()
         self._ui.cbxComponent.addItems(value)
+"""
+    @pyqtSlot(bool)
+    def on_launch(self, value):
+        self._ui.btnInit.start
+"""
