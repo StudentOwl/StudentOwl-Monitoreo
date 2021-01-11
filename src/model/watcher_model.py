@@ -15,6 +15,7 @@ class WatcherModel(QObject):
     enable_init_changed = pyqtSignal(bool)
     name_changed = pyqtSignal(str)
     init_text_changed = pyqtSignal(str)
+    launch_tool = pyqtSignal(bool)
 
     is_run_timer_changed = pyqtSignal(bool)
 
@@ -30,6 +31,7 @@ class WatcherModel(QObject):
         self._component_selected = -1
         self._enable_init = True
         self._btn_init_text = "Iniciar"
+        self._enable_launcher = False
 
         self._isRunTimer = False
 
