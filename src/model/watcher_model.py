@@ -1,5 +1,9 @@
-from model.models import Component
+from globals import LOG_PATH
 from PyQt5.QtCore import QObject, pyqtSignal
+from utils.reader import ReaderLogFile
+from utils.threader import RepeatedTimer
+
+from model.models import Component
 
 
 class WatcherModel(QObject):
@@ -12,6 +16,8 @@ class WatcherModel(QObject):
     name_changed = pyqtSignal(str)
     init_text_changed = pyqtSignal(str)
 
+    is_run_timer_changed = pyqtSignal(bool)
+
     def __init__(self):
         super().__init__()
 
@@ -22,8 +28,14 @@ class WatcherModel(QObject):
         ]
         self._student_name = ''
         self._component_selected = -1
-        self._enable_init = False
+        self._enable_init = True
         self._btn_init_text = "Iniciar"
+
+        self._isRunTimer = False
+
+        self._timer = RepeatedTimer(15, self.funtionRepeat)
+
+        self._reader = ReaderLogFile(LOG_PATH)
 
     @property
     def components(self) -> list[dict[str, str]]:
@@ -97,3 +109,34 @@ class WatcherModel(QObject):
     def btn_init_text(self, value):
         self._btn_init_text = value
         self.init_text_changed.emit(self._btn_init_text)
+
+    @property
+    def isRunTimer(self) -> bool:
+        """
+        isRunningTimer property.
+        """
+        return self._isRunTimer
+
+    @isRunTimer.setter
+    def isRunTimer(self, value):
+        self._isRunTimer = value
+        self.is_run_timer_changed.emit(self._isRunTimer)
+
+    def runTimer(self):
+        """
+        Method to implement TimerThread functionality
+        """
+        if self._isRunTimer:
+            print("Entro al START")
+            self._timer.start()
+
+    def stopTimer(self):
+        if not self._isRunTimer:
+            print("Entro al STOP")
+            self._timer.stop()
+
+    def funtionRepeat(self):
+        jsonLogs = self._reader.getJson(self._reader.getLines())
+        if jsonLogs != None:
+            print(jsonLogs)
+        self.student_name = str(self._reader.lastLine)
