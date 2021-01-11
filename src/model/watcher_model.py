@@ -1,7 +1,9 @@
-from model.models import Component
-from utils.threader import RepeatedTimer
+from globals import LOG_PATH
 from PyQt5.QtCore import QObject, pyqtSignal
-from random import randint
+from utils.reader import ReaderLogFile
+from utils.threader import RepeatedTimer
+
+from model.models import Component
 
 
 class WatcherModel(QObject):
@@ -31,7 +33,9 @@ class WatcherModel(QObject):
 
         self._isRunTimer = False
 
-        self._timer = RepeatedTimer(5, self.funtionRepeat)
+        self._timer = RepeatedTimer(15, self.funtionRepeat)
+
+        self._reader = ReaderLogFile(LOG_PATH)
 
     @property
     def components(self) -> list[dict[str, str]]:
@@ -118,14 +122,10 @@ class WatcherModel(QObject):
         self._isRunTimer = value
         self.is_run_timer_changed.emit(self._isRunTimer)
 
-    def runTimer(self, interval=5):
+    def runTimer(self):
         """
         Method to implement TimerThread functionality
         """
-        # timer = RepeatedTimer(interval, self.funtionRepeat)
-        # if not self._isRunTimer:
-        #     print("Entro")
-        #     timer.stop()
         if self._isRunTimer:
             print("Entro al START")
             self._timer.start()
@@ -136,4 +136,7 @@ class WatcherModel(QObject):
             self._timer.stop()
 
     def funtionRepeat(self):
-        self.student_name = str(randint(0, 20))
+        jsonLogs = self._reader.getJson(self._reader.getLines())
+        if jsonLogs != None:
+            print(jsonLogs)
+        self.student_name = str(self._reader.lastLine)
