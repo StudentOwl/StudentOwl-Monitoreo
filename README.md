@@ -19,3 +19,4 @@ pyrcc5 .\resources\resource.qrc -o .\resources\resource_rc.py
 ```cmd
 python -m unittest discover
 ```
+### Prueba
