@@ -11,6 +11,7 @@ class WatcherModel(QObject):
     enable_init_changed = pyqtSignal(bool)
     name_changed = pyqtSignal(str)
     init_text_changed = pyqtSignal(str)
+    launch_tool = pyqtSignal(bool)
 
     def __init__(self):
         super().__init__()
@@ -24,6 +25,7 @@ class WatcherModel(QObject):
         self._component_selected = -1
         self._enable_init = False
         self._btn_init_text = "Iniciar"
+        self._enable_launcher = False
 
     @property
     def components(self) -> list[dict[str, str]]:

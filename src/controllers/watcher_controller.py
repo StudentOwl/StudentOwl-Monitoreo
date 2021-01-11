@@ -1,6 +1,6 @@
 from model.watcher_model import WatcherModel
 from PyQt5.QtCore import QObject, pyqtSlot
-
+from utils.launcher import LauncherKidLogger
 
 class WatcherController(QObject):
     """
@@ -31,3 +31,12 @@ class WatcherController(QObject):
         print(value)
         self._model.enable_init = value
         self._model.btn_init_text = "Iniciar" if value else "Terminar"
+
+    @pyqtSlot(bool)
+    def launch_kidlogger(self):
+        """
+        Evento que inicia con la herramienta KidLogger
+        """        
+        if (self._model.btn_init_text == "Iniciar"):
+            self._launch.launch()
+        
