@@ -1,0 +1,121 @@
+[
+  {
+    "class": "app",
+    "time": 1610318104.116,
+    "duration": 8,
+    "applicationName": "explorer",
+    "action": "Desktop"
+  },
+  {
+    "class": "app",
+    "time": 1610318105.943,
+    "duration": 9,
+    "applicationName": "Kidlogger",
+    "action": "Propiedades de KidLogger"
+  },
+  {
+    "class": "app",
+    "time": 1610318116.82,
+    "duration": 5,
+    "applicationName": "Code",
+    "action": "reader.py - src - Visual Studio Code [Administrador]"
+  },
+  {
+    "class": "app",
+    "time": 1610318124.71,
+    "duration": 0,
+    "applicationName": "msedge",
+    "action": "(44) Gone Forever - YouTube y 8 p\u00e1ginas m\u00e1s - Personal: Microsoft\u200b Edge"
+  },
+  {
+    "class": "app",
+    "time": 1610318157.665,
+    "duration": 7,
+    "applicationName": "notepad++",
+    "action": "C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\9 January,Saturday.htm - Notepad++"
+  },
+  {
+    "class": "app",
+    "time": 1610318166.728,
+    "duration": 9,
+    "applicationName": "explorer",
+    "action": "logs"
+  },
+  {
+    "class": "app",
+    "time": 1610318173.975,
+    "duration": 5,
+    "applicationName": "notepad++",
+    "action": "C:\\Program Files (x86)\\KidLogger\\logs\\Scoowy\\10 January,Sunday.htm - Notepad++"
+  },
+  {
+    "class": "app",
+    "time": 1610318181.228,
+    "duration": 0,
+    "applicationName": "msedge",
+    "action": "Introduction | Documentation | Poetry - Python dependency management and packaging made e"
+  },
+  {
+    "class": "app",
+    "time": 1610318183.4,
+    "duration": 103,
+    "applicationName": "Code",
+    "action": "reader.py - src - Visual Studio Code [Administrador]"
+  },
+  {
+    "class": "app",
+    "time": 1610318286.444,
+    "duration": 909,
+    "applicationName": "Code",
+    "action": "\u25cf watcher_model.py - src - Visual Studio Code [Administrador]"
+  },
+  {
+    "class": "app",
+    "time": 1610318532.853,
+    "duration": 0,
+    "applicationName": "msedge",
+    "action": "Introduction | Documentation | Poetry - Python dependency management and packaging made e"
+  },
+  {
+    "class": "app",
+    "time": 1610318534.665,
+    "duration": 49,
+    "applicationName": "explorer",
+    "action": "Scoowy"
+  },
+  {
+    "class": "app",
+    "time": 1610318536.478,
+    "duration": 125,
+    "applicationName": "notepad++",
+    "action": "*C:\\Users\\Scoow\\Twitch\\Minecraft\\Instances\\ComputerCraft 1.16.4\\saves\\ComputerProbes\\comp"
+  },
+  {
+    "class": "app",
+    "time": 1610318578.164,
+    "duration": 164,
+    "applicationName": "python",
+    "action": "StudentOwl - Monitoreo"
+  },
+  {
+    "class": "app",
+    "time": 1610319216.165,
+    "duration": 83,
+    "applicationName": "Telegram",
+    "action": "Telegram (5067)"
+  },
+  {
+    "class": "app",
+    "time": 1610319402.85,
+    "duration": 39,
+    "applicationName": "WhatsApp",
+    "action": "WhatsApp"
+  },
+  {
+    "class": "app",
+    "time": 1610319895.904,
+    "duration": 12,
+    "applicationName": "Kidlogger",
+    "action": "Kidlogger []"
+  }
+]

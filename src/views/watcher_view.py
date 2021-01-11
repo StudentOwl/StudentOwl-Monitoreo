@@ -21,6 +21,11 @@ class WatcherView(QMainWindow):
         self._ui = WatcherMainWindow()
         self._ui.setupUi(self)
 
+        # Variables adicionales
+        self.__colorActive = "rgb(102, 105, 197)"
+        self.__colorDeactive = "rgb(255, 29, 21)"
+        self._styleBtnInit = "background-color: {};\nborder-radius: 8;\ncolor: rgb(255, 255, 255);"
+
         # connect ui-widget to controller
         # if ui changes, it sends a signal to an slot on which we connect a controller class.
         # therefore we can recive the signal in the controller
@@ -29,11 +34,8 @@ class WatcherView(QMainWindow):
         self._ui.btnInit.clicked.connect(
             lambda: self._controller.change_enable_init(not self._model.enable_init))
         # Lambda to execute function with value
-        """
         self._ui.btnInit.clicked.connect(
-            lambda: self._controller.launch_kidlogger
-        )
-        """
+            lambda: self._controller.change_run_timer(not self._model.isRunTimer))
 
         # listen for model event signals
         # connect the method to update the ui to the slots of the model
@@ -59,7 +61,9 @@ class WatcherView(QMainWindow):
 
     @pyqtSlot(bool)
     def on_enable_init_changed(self, value):
-        self._ui.btnInit.setEnabled(value)
+        # self._ui.btnInit.setEnabled(value)
+        self._ui.btnInit.setStyleSheet(
+            self._styleBtnInit.format(self.__colorActive if value else self.__colorDeactive))
 
     @pyqtSlot(str)
     def on_text_init_changed(self, value):

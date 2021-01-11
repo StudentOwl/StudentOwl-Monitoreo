@@ -28,7 +28,6 @@ class WatcherController(QObject):
         """
         Evento que modifica el boton de inicio
         """
-        print(value)
         self._model.enable_init = value
         self._model.btn_init_text = "Iniciar" if value else "Terminar"
 
@@ -40,3 +39,10 @@ class WatcherController(QObject):
         if (self._model.btn_init_text == "Iniciar"):
             self._launch.launch()
         
+    def change_run_timer(self, value):
+        """
+        Evento que activa el TimerThread
+        """
+        self._model.isRunTimer = value
+        self._model.runTimer()
+        self._model.stopTimer()
