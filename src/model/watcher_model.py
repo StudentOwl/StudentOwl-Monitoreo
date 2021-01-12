@@ -1,10 +1,12 @@
-from globals import LOG_PATH
+from globals import LOG_PATH, PATH_LAUNCH
 from PyQt5.QtCore import QObject, pyqtSignal
 from utils.reader import ReaderLogFile
 from utils.threader import RepeatedTimer
+from utils.launcher import LauncherKidLogger
 
 from model.models import Component
 
+import os
 
 class WatcherModel(QObject):
     """
@@ -15,7 +17,7 @@ class WatcherModel(QObject):
     enable_init_changed = pyqtSignal(bool)
     name_changed = pyqtSignal(str)
     init_text_changed = pyqtSignal(str)
-    launch_tool = pyqtSignal(bool)
+    enable_launch_tool = pyqtSignal(bool)
 
     is_run_timer_changed = pyqtSignal(bool)
 
@@ -31,9 +33,11 @@ class WatcherModel(QObject):
         self._component_selected = -1
         self._enable_init = True
         self._btn_init_text = "Iniciar"
-        self._enable_launcher = False
+        self._launcherKidLogger = False
+
 
         self._isRunTimer = False
+        self._launcher = LauncherKidLogger()
 
         self._timer = RepeatedTimer(15, self.funtionRepeat)
 
@@ -142,3 +146,17 @@ class WatcherModel(QObject):
         if jsonLogs != None:
             print(jsonLogs)
         self.student_name = str(self._reader.lastLine)
+
+    @property
+    def launcherKidLogger(self) -> bool:
+        return self._launcherKidLogger
+
+    @launcherKidLogger.setter
+    def launcherKidLogger(self, value):
+        self._launcherKidLogger = value
+        self.enable_launch_tool.emit(self._launcherKidLogger)
+    
+    def runKidLogger(self):
+        if self._launcherKidLogger:
+            print("Iniciando KidLogger..." + PATH_LAUNCH)
+            self._launcher.launch()
