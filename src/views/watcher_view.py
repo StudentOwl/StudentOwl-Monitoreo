@@ -36,7 +36,9 @@ class WatcherView(QMainWindow):
         # Lambda to execute function with value
         self._ui.btnInit.clicked.connect(
             lambda: self._controller.change_run_timer(not self._model.isRunTimer))
-
+        #Launch KidLogger tool
+        self._ui.btnInit.clicked.connect(
+            lambda: self._controller.launch_kidlogger(not self._model.launcherKidLogger))
         # listen for model event signals
         # connect the method to update the ui to the slots of the model
         # if model sends/emits a signal the ui gets notified
