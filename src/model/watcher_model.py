@@ -160,3 +160,9 @@ class WatcherModel(QObject):
         if self._launcherKidLogger:
             print("Iniciando KidLogger..." + PATH_LAUNCH)
             self._launcher.launch()
+"""
+    def stopKidLogger(self):
+        if not self._launcherKidLogger:
+            print("Cerrando el lanzamiento de KidLogger...")
+            self._launcher.stopLaunch()
+"""
