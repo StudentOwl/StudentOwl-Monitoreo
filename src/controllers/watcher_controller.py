@@ -38,6 +38,7 @@ class WatcherController(QObject):
         """        
         self._model.launcherKidLogger = value
         self._model.runKidLogger()
+        #self._model.stopKidLogger()
         
     def change_run_timer(self, value):
         """
