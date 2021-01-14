@@ -1,5 +1,5 @@
 from configparser import Error
-from urllib3.exceptions import MaxRetryError, NewConnectionError
+from urllib3.exceptions import MaxRetryError, NewConnectionError, RequestError
 from requests.exceptions import ConnectionError
 import json
 import requests
@@ -12,6 +12,12 @@ def readFile(pathFile: str) -> str:
         for line in lines:
             file += line
     return file
+
+def verifyServer(server: str) -> bool:
+    try:
+        pass
+    except RequestError as err:
+        pass
 
 def main():
     file = readFile("./resources/pruebajson.json")
