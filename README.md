@@ -4,19 +4,35 @@
 
 ### Convert file.ui to file.py
 
-```cmd
+```bash
 pyuic5 .\resources\[file].ui -o .\views\[file].py
 ```
 
 ### Convert resources.qrc to resources.py
 
-```cmd
+```bash
 pyrcc5 .\resources\resource.qrc -o .\resources\resource_rc.py
 ```
 
 ### Run discover all test files
 
-```cmd
+```bash
 python -m unittest discover
 ```
-### Prueba
+
+### Peticiones GET
+Realizar una peticion GET a un servidor
+```python
+import requests
+
+r = requests.get('https://miapi.com/posts/')
+posts = r.json()
+```
+
+### Peticiones POST
+```python
+import requests
+
+payload = {'comentario': 'Está genial', 'estrellas': 5}
+r = requests.post('https://miapi.com/comentarios/', json=payload)
+```
