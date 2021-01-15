@@ -1,0 +1,16 @@
+[
+  {
+    "class": "app",
+    "time": 1610318104.116,
+    "duration": 8,
+    "applicationName": "explorer",
+    "action": "Desktop"
+  },
+  {
+    "class": "app",
+    "time": 1610318105.943,
+    "duration": 9,
+    "applicationName": "Kidlogger",
+    "action": "Propiedades de KidLogger"
+  }
+]
