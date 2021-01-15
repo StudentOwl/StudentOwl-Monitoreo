@@ -1,30 +1,28 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import
-from __future__ import print_function
+from setuptools import setup
 
-import io
-import re
-from glob import glob
-from os.path import basename, dirname, join, splitext
+packages = ['src', 'src.controllers', 'src.model', 'src.utils', 'src.views']
 
-from setuptools import setup, find_packages
+packages_data = {'': ['*'], 'src': ['resources/*', 'resources/img/']}
 
-setup(
-    name='StudentOwl - Monitoreo',
-    version='1.0',
-    license=license,
-    description='Modulo de recopilación de información de StudentOwl',
-    author='Juan Gahona',
-    author_email='gahonajuanjo@gmail.com',
-    url='https://github.com/StudentOwl/StudentOwl-Monitoreo.git',
+install_requires = ['PyQt5>=5.15.2,<6.0.0']
 
-    packages=find_packages('src', exclude=('tests')),
-    package_dir={'': 'src'},
-    py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
-    include_package_data=True,
-    zip_safe=False,
+setup_kwargs = {
+    'name': 'studentowl-watcher',
+    'version': '0.1.0',
+    'description': '',
+    'long_description': 'Proyecto de reto',
+    'author': 'Scoowy',
+    'author_email': 'gahonajuanjo@gmail.com',
+    'maintainer': None,
+    'maintainer_email': 'None',
+    'url': 'https://github.com/StudentOwl/StudentOwl-Monitoreo.git',
+    'packages': packages,
+    'packages_data': packages_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.9,<4.0',
+}
 
-    install_requires=['pyqt5', 'pytest'],
-)
+setup(**setup_kwargs)
