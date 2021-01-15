@@ -271,3 +271,4 @@ $RECYCLE.BIN/
 
 ui/
 .vscode
+Pipfile.lock
