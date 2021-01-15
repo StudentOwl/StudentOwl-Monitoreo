@@ -39,10 +39,10 @@ def uploadLog(url: str, payload) -> bool:
 
     options = {"url": url}
 
-    if type(payload) is dict:
-        options["data"] = payload
-    elif type(payload) is str:
+    if type(payload) == dict or type(payload) == list:
         options["json"] = payload
+    elif type(payload) == str:
+        options["data"] = payload
     else:
         return False
 
@@ -64,11 +64,13 @@ def uploadLog(url: str, payload) -> bool:
 
 def main():
     file = readJsonFile("./resources/pruebajson.json")
+    file = json.loads(file)
+    payload = {"count":len(file), "data": file}
     server = "http://localhost:3000/"
     route = "api/v1.0/GSPR01/lfbermeo"
     
     if verifyServer(server):
-        res = uploadLog(f"{server}{route}", file)
+        res = uploadLog(f"{server}{route}", payload)
 
         if res:
             print("[INFO]: Exitoso")
