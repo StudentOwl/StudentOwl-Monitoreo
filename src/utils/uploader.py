@@ -63,6 +63,9 @@ def uploadLog(url: str, payload) -> bool:
 
 
 def main():
+    """
+    Ejecucion inicial del modulo cambiar
+    """
     file = readJsonFile("./resources/pruebajson.json")
     file = json.loads(file)
     payload = {"count":len(file), "data": file}
