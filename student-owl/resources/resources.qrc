@@ -1,5 +1,6 @@
 <RCC>
-  <qresource prefix="logo">
+  <qresource prefix="imgs">
+    <file>img/StudentOwlPet-Dark.ico</file>
     <file>img/StudentOwlLogoRight.png</file>
   </qresource>
 </RCC>

@@ -16,13 +16,21 @@ class WatcherMainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(500, 600)
-        MainWindow.setStyleSheet("background-color: rgb(11, 175, 208);")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(
+            ":/imgs/img/StudentOwlPet-Dark.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        MainWindow.setStyleSheet(
+            "QWidget#centralwidget { background-color: rgb(11, 175, 208);}")
+        MainWindow.setIconSize(QtCore.QSize(25, 25))
+        MainWindow.setToolButtonStyle(QtCore.Qt.ToolButtonIconOnly)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.mainPnl = QtWidgets.QFrame(self.centralwidget)
         self.mainPnl.setGeometry(QtCore.QRect(33, 46, 433, 508))
         self.mainPnl.setStyleSheet("background-color: rgb(250, 254, 255);\n"
-                                   "border-radius: 20;")
+                                   "border-radius: 20;\n"
+                                   "")
         self.mainPnl.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.mainPnl.setFrameShadow(QtWidgets.QFrame.Raised)
         self.mainPnl.setLineWidth(3)
@@ -33,11 +41,15 @@ class WatcherMainWindow(object):
         self.btnInit.setMaximumSize(QtCore.QSize(200, 50))
         font = QtGui.QFont()
         font.setPointSize(16)
+        font.setKerning(True)
         self.btnInit.setFont(font)
         self.btnInit.setStyleSheet("background-color: rgb(102, 105, 197);\n"
                                    "border-radius: 8;\n"
-                                   "color: rgb(255, 255, 255);")
-        self.btnInit.setFlat(False)
+                                   "color: rgb(255, 255, 255);\n"
+                                   "\n"
+                                   "hover {\n"
+                                   "    background-color: rgb(89, 100, 255);\n"
+                                   "}")
         self.btnInit.setObjectName("btnInit")
         self.cbxComponent = QtWidgets.QComboBox(self.mainPnl)
         self.cbxComponent.setGeometry(QtCore.QRect(54, 330, 323, 48))
@@ -57,49 +69,57 @@ class WatcherMainWindow(object):
         self.lblCmbComponent.setFont(font)
         self.lblCmbComponent.setObjectName("lblCmbComponent")
         self.lblWelcome = QtWidgets.QLabel(self.mainPnl)
-        self.lblWelcome.setGeometry(QtCore.QRect(54, 190, 325, 45))
+        self.lblWelcome.setGeometry(QtCore.QRect(54, 180, 325, 45))
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
         font.setPointSize(30)
         self.lblWelcome.setFont(font)
+        self.lblWelcome.setStyleSheet(
+            "background-color: rgba(255, 255, 255, 0);")
         self.lblWelcome.setObjectName("lblWelcome")
         self.lblStudentName = QtWidgets.QLabel(self.mainPnl)
-        self.lblStudentName.setGeometry(QtCore.QRect(54, 230, 325, 45))
+        self.lblStudentName.setGeometry(QtCore.QRect(54, 220, 325, 45))
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
-        font.setPointSize(30)
+        font.setPointSize(24)
         self.lblStudentName.setFont(font)
+        self.lblStudentName.setStyleSheet(
+            "background-color: rgba(255, 255, 255, 0);")
         self.lblStudentName.setObjectName("lblStudentName")
         self.lblLogo = QtWidgets.QLabel(self.mainPnl)
-        self.lblLogo.setGeometry(QtCore.QRect(54, 58, 325, 111))
+        self.lblLogo.setGeometry(QtCore.QRect(54, 48, 325, 111))
         self.lblLogo.setStyleSheet(
-            "image: url(:/logo/img/StudentOwlLogoRight.png);")
+            "image: url(:/imgs/img/StudentOwlLogoRight.png);")
         self.lblLogo.setText("")
         self.lblLogo.setObjectName("lblLogo")
+        self.lblStudentLastname = QtWidgets.QLabel(self.mainPnl)
+        self.lblStudentLastname.setGeometry(QtCore.QRect(50, 250, 325, 45))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(24)
+        self.lblStudentLastname.setFont(font)
+        self.lblStudentLastname.setStyleSheet(
+            "background-color: rgba(255, 255, 255, 0);")
+        self.lblStudentLastname.setObjectName("lblStudentLastname")
         self.lblLogo.raise_()
         self.btnInit.raise_()
         self.cbxComponent.raise_()
         self.lblCmbComponent.raise_()
         self.lblWelcome.raise_()
         self.lblStudentName.raise_()
+        self.lblStudentLastname.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 500, 21))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate(
-            "MainWindow", "StudentOwl - Monitoreo"))
-        self.btnInit.setText(_translate("MainWindow", "Iniciar"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.btnInit.setText(_translate("MainWindow", "Enviar"))
         self.lblCmbComponent.setText(_translate(
             "MainWindow", "Seleccione el componente académico:"))
         self.lblWelcome.setText(_translate("MainWindow", "Bienvenido"))
-        self.lblStudentName.setText(_translate("MainWindow", "estudiante"))
+        self.lblStudentName.setText(_translate("MainWindow", "Juan José"))
+        self.lblStudentLastname.setText(
+            _translate("MainWindow", "Gahona Cañar"))
