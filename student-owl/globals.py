@@ -1,10 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
+
 from utils.config import Configuration
 from utils.time_utils import getDayInInt, getDayInText, getMonthInText
 
-__config = Configuration("config.ini").config
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+CONFIG_PATH = os.path.join(ROOT_DIR, 'config.ini')
+
+__config = Configuration(CONFIG_PATH).config
 
 # Globals
 # Log Constants
