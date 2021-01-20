@@ -15,6 +15,7 @@ pytest = "*"
 pyqt5 = "*"
 pyside2 = "*"
 requests = "*"
+pyinstaller = "*"
 
 [requires]
 python_version = "3.9"
