@@ -21,7 +21,9 @@ python -m unittest discover
 ```
 
 ### Peticiones GET
+
 Realizar una peticion GET a un servidor
+
 ```python
 import requests
 
@@ -30,9 +32,20 @@ posts = r.json()
 ```
 
 ### Peticiones POST
+
 ```python
 import requests
 
 payload = {'comentario': 'Está genial', 'estrellas': 5}
 r = requests.post('https://miapi.com/comentarios/', json=payload)
+```
+
+## Compile Commands
+
+In student-owl-process folder use:
+
+```bash
+pyinstaller --onfile --clean --noconfirm --name="Step 1" ./configurator.py
+pyinstaller --onfile --clean --noconfirm --name="Step 2" ./reader.py
+pyinstaller --onfile --clean --noconfirm --name="Step 3" ./uploader.py
 ```
