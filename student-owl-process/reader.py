@@ -48,7 +48,7 @@ def proccessJson(jsonData: dict) -> dict:
         if jsonData.get("duration"):
             jsonData["duration"] = int(jsonData["duration"])
         if jsonData.get("time"):
-            jsonData["time"] = convertTimeToTimestamp(jsonData["time"])
+            jsonData["time"] = convertTimeToTimestamp(jsonData["time"])*1000
 
         jsonData["student"] = USERNAME
         jsonData["component"] = COMPONENT
